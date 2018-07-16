@@ -1,4 +1,4 @@
-const port = 3000 || process.env.$PORT;
+const port = 3000 || process.env.PORT;
 const app = require('express')();
 const fs = require('fs');
 const dataFilePath = './dataset.csv';

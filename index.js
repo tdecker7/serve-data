@@ -1,4 +1,3 @@
-const port = 3000 || process.env.PORT;
 const app = require('express')();
 const fs = require('fs');
 const dataFilePath = './dataset.csv';
@@ -47,4 +46,4 @@ app.use((err, req, res, next) => {
     res.json({ error: { "message": err.message }});
 })
 
-app.listen(port);
+app.listen(process.env.PORT || 5000);
